@@ -1,0 +1,93 @@
+/****** GENERAL RULES *****/
+
+/* COLORS */
+:root {
+    --clr-primary-dark-cyan: hsl(185, 75%, 39%);
+    --clr-primary-dark-blue: hsl(229, 23%, 23%);
+    --clr-primary-gray-blue: hsl(227, 10%, 46%);
+    --clr-neutral-dark-gray: hsl(0, 0%, 59%);
+}
+.font-light {
+    color: var(--clr-neutral-dark-gray);
+    font-weight: 400;
+}
+
+/* LAYOUT RULES */
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-primary-dark-cyan);
+    background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+    background-position: top -450px left -450px, bottom -450px right -450px; 
+    background-repeat: no-repeat;
+}
+.card {
+    min-width: 300px;
+    width: 350px;
+    height: 375px;
+    margin: 0 1em;
+    background-color: #fff;
+    background-image: url(/images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    border-radius: 15px;
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    height: 285px;
+    padding-bottom: .5em;
+}
+.profile img {
+    position: absolute;
+    top: 87px;
+    border: 5px solid #FFF;
+    border-radius: 50%;
+}
+.profile p {
+    margin: 0;
+    margin-bottom: .5em;
+}
+.profile p:first-of-type {
+    font-weight: 700;
+}
+.profile p:last-of-type {
+    font-size: .8em;
+}
+.stats {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 90px;
+    box-shadow: 0 -1px 0 0#ddd;
+}
+.stats ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0 1.3em;
+}
+.stats li {
+    display: inline-block;
+    font-weight: 700;
+    line-height: 1;
+}
+.stats .font-light {
+    font-size: .5em;
+    letter-spacing: 2px;
+}
+.attribution { 
+    position: absolute;
+    bottom: 5px;
+    font-size: 11px; text-align: center;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
